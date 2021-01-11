@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class Link extends Model
 {
-  protected $allowedFields = ['sentence', 'offset', 'preview'];
+  protected $allowedFields = ['sentence', 'offset', 'preview', 'link'];
   protected $useTimestamps = true;
 }
  ?>

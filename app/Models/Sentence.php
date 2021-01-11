@@ -5,9 +5,9 @@ use CodeIgniter\Model;
 
 class Sentence extends Model
 {
-  protected $table = 'table';
+  protected $table = 'sentence';
   protected $useTimestamps = true;
 
-  protected $allowedFields = ['text_note_id', 'order_no'];
+  protected $allowedFields = ['text_note_id', 'order_no', 'sentence'];
 }
  ?>
