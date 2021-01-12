@@ -12,7 +12,10 @@
     "development": "npx webpack"
   },
   "watch": {
-    "development": "src/{*.js,*.scss}"
+    "development": {
+      "patterns": ["src"],
+      "extensions": "scss,js"
+    }
   },
   "repository": {
     "type": "git",
