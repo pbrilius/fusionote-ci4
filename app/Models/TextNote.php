@@ -11,4 +11,5 @@ class TextNote extends Model
   protected $useTimestamps = true;
 
   protected $returnType = TextNoteEntity::class;
+  protected $table = 'text_note';
 }
