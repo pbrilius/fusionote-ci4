@@ -12,7 +12,6 @@ class User extends Seeder
 			'last_name' => 'Veber',
 		];
 
-		$this->db->query('INSERT INTO ci4_user (email, first_name, last_name) VALUES(:email:, :first_name:, :last_name:)', $data);
 		$this->db->table('user')->insert($data);
 	}
 }

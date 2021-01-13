@@ -11,5 +11,7 @@ class Sentence extends Seeder
 			'order_no' => 1,
 			'sentence' => $this->db->query('SELECT * FROM ci4_text_note LIMIT 1')->getResultObject()[0]->text,
 		];
+
+		$this->db->table('sentence')->insert($data);
 	}
 }
