@@ -1,0 +1,49 @@
+{
+  "name": "ci4-fusionote",
+  "version": "1.0.0",
+  "description": "## What is CodeIgniter?",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch development",
+    "development": "npx webpack"
+  },
+  "watch": {
+    "development": {
+      "patterns": ["src"],
+      "extensions": "scss,js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbrilius/fusionote-ci4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbrilius/fusionote-ci4/issues"
+  },
+  "homepage": "https://github.com/pbrilius/fusionote-ci4#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "node-sass": "^5.0.0",
+    "npm-watch": "^0.7.0",
+    "postcss": "^8.2.2",
+    "postcss-loader": "^4.1.0",
+    "precss": "^4.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
+  }
+}
