@@ -12,8 +12,10 @@
         <title><?= $title ?>&nbsp;&#x0005F;&nbsp;<?= $metaTitle ?></title>
     </head>
     <body>
-        <?= $this->include('topbar') ?>
-        <?= $this->renderSection('content') ?>
-        <?= $this->include('footer') ?>
+        <?= $this->include('partials/topbar') ?>
+        <div class="container container-lg container-fluid">
+            <?= $this->renderSection('content') ?>
+        </div>
+        <?= $this->include('partials/footer') ?>
     </body>
 </html>

@@ -9,4 +9,14 @@ class Home extends BaseController
 
 	//--------------------------------------------------------------------
 
+	public function dashboard()
+	{
+		return view('home/dashboard', [
+			'url' => site_url('Home::dashboard'),
+			'title' => 'Home',
+			'metaTitle' => 'Dashboard',
+			'type' => 'Web page',
+			'image' => site_url('/favicon.ico')
+		]);
+	}
 }
