@@ -6,6 +6,7 @@
         <meta property="og:title"              content="<?= $title ?>" />
         <meta property="og:description"        content="<?= $title . ' - ' . $metaTitle ?>" />
         <meta property="og:image"              content="<?= $image ?>" />
+        <meta charset="UTF-8">
     </meta>
     <head>
         <title><?= $title ?>&nbsp;&#x0005F;&nbsp;<?= $metaTitle ?></title>
@@ -13,5 +14,6 @@
     <body>
         <?= $this->include('topbar') ?>
         <?= $this->renderSection('content') ?>
+        <?= $this->include('footer') ?>
     </body>
 </html>
